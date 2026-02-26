@@ -1,23 +1,20 @@
 import java.util.*;
 
-/**
- * CityGraph Class - Managed by Member 1(Zainab)
- * This class handles the core data structure (Graph) for the Smart City.
- * It maps locations and creates routes using different traversal algorithms.
+/*CityGraph Class - Managed by Member 1(Zainab)
+ This class handles the core data structure (Graph) for the Smart City.
+ It maps locations and creates routes using different traversal algorithms.
  */
 public class CityGraph {
     
-    /* * I chose a HashMap for the Adjacency List because it's highly efficient.
-     * The 'Key' is the city name, and the 'Value' is a List of its neighbors.
-     * This allows us to find any city's connections in O(1) average time.
+    /* I chose a HashMap for the Adjacency List because it's highly efficient.
+     The 'Key' is the city name, and the 'Value' is a List of its neighbors.
+      This allows us to find any city's connections in O(1) average time.
      */
     private Map<String, List<String>> adjList;
 
     public CityGraph() {
         this.adjList = new HashMap<>();
     }
-
-    //  MANAGEMENT SECTION 
 
     public void addLocation(String name) {
         // Validation: We check if the city exists to prevent duplicate entries
@@ -31,9 +28,9 @@ public class CityGraph {
     }
 
     /*
-     * Removing a location is a two-step process:
-     * 1. We must remove the city from the lists of all other cities it was connected to.
-     * 2. We then remove the city's own entry from the Map.
+      Removing a location is a two-step process:
+     1. We must remove the city from the lists of all other cities it was connected to.
+     2. We then remove the city's own entry from the Map.
      */
     public void removeLocation(String name) {
         if (adjList.containsKey(name)) {
@@ -84,7 +81,7 @@ public class CityGraph {
             System.out.println("The map is currently empty.");
             return;
         }
-        System.out.println("\n--- Current City Map ---");
+        System.out.println("\n Current City Map ");
         // Printing each city and its neighbors for easy visualization
         for (String city : adjList.keySet()) {
             System.out.println(city + " -> " + adjList.get(city));
@@ -93,9 +90,8 @@ public class CityGraph {
 
     // TRAVERSAL SECTION 
 
-    /* * BFS (Breadth-First Search) implementation using a Queue.
-     * I chose this because it explores the map layer-by-layer, which is 
-     * the best way to find the shortest path in an unweighted graph.
+    /*  BFS (Breadth-First Search) implementation using a Queue.
+      I chose this because it explores the map layer-by-layer, which is the best way to find the shortest path in an unweighted graph.
      */
     
     public void searchQueue(String start) {
@@ -123,9 +119,8 @@ public class CityGraph {
         System.out.println();
     }
 
-    /* * DFS (Depth-First Search) implementation using a Stack.
-     * This explores as deep as possible down one branch before backtracking.
-     * It demonstrates my ability to use Stack-based logic for pathfinding.
+    /* DFS (Depth-First Search) implementation using a Stack.
+     This explores as deep as possible down one branch before backtracking.
      */
     
     public void searchStack(String start) {
