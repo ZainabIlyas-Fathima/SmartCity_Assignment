@@ -1,9 +1,19 @@
 #  Smart City Navigation System
-**Assignment: Data Structures & Algorithms**
+**Assignment: Data Structures & Algorithms** - CCS2300 Assignment
 
 ## 👤 Project Information
-* **Lead Developer (Member 1):** Zainab Ilyas Fathima (CIT-24-02-0182)
-* **Repository Status:** Private (Team Access Only)
+# Smart City Management System 
+
+## Team Members & Responsibilities
+* **Member 1:** Fathima Zainab Ilyas - Module 1: Graph Implementation, Location/Road Management, Traversal Logic.
+* **Member 2:** Thakshila - Module 2: Sorting Algorithms & Performance Comparison.
+* **Member 3:** Lashini - Module 3: Searching Algorithms & Tree-based Organization.
+
+## Project Structure
+* `Module 1`: Contains the Adjacency List Graph and BST for location storage.
+* `Module 2`: Contains Bubble, Merge, and Quick Sort implementations.
+* `Module 3`: Contains the searching logic and performance analyzer.
+
 * **Core Logic:** Graph-based city mapping and pathfinding.
 
 
