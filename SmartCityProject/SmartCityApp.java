@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 /*
  Main application class for the Smart City Route Planner.
-  As Member 1(zainab), I designed this menu to be the central hub for our project.
+As Member 1(zainab), I designed this menu to be the central hub for our project.
  It connects the user's input to the Graph data structures we've built.
  */
 public class SmartCityApp {
@@ -29,7 +29,7 @@ public class SmartCityApp {
             /*  INPUT VALIDATION: 
               I used a try-catch block here to prevent the program from crashing 
               if a user enters a letter instead of a number. 
-             I'm using nextLine() and parsing it to avoid the "newline" bug in Scanner.
+             I'm using nextLine() and parsing it to avoid the ""newlin"e" bug in Scanner.
              */
             try {
                 choice = Integer.parseInt(input.nextLine());
